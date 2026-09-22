@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Free AI Tools Directory Entry",
+  "type": "object",
+  "required": ["name", "category", "url", "access", "last_verified"],
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "category": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "format": "uri"},
+    "docs_url": {"type": "string", "format": "uri"},
+    "access": {"enum": ["open-source", "free-tier", "credits", "mixed", "unknown"]},
+    "free_limit": {"type": "string"},
+    "paid_after": {"type": "string"},
+    "self_hostable": {"type": "boolean"},
+    "last_verified": {"type": "string", "format": "date"},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
