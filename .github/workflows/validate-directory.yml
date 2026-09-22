@@ -1,0 +1,37 @@
+name: Validate directory
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate JSON syntax
+        run: |
+          python -m json.tool data/tools.json > /dev/null
+          python -m json.tool data/tools.schema.json > /dev/null
+      - name: Validate required fields
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import date
+          with open('data/tools.json', encoding='utf-8') as f:
+              tools = json.load(f)
+          required = {'name', 'category', 'url', 'access', 'last_verified'}
+          assert isinstance(tools, list) and tools, 'tools.json must contain a non-empty list'
+          for tool in tools:
+              missing = required - tool.keys()
+              assert not missing, f'Missing fields in {tool}: {missing}'
+              assert tool['url'].startswith(('http://', 'https://'))
+              date.fromisoformat(tool['last_verified'])
+          print(f'Validated {len(tools)} directory entries')
+          PY
