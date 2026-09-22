@@ -17,6 +17,7 @@
 | [🗂️ Structured JSON Catalog](data/tools.json) | Machine-readable tool records, categories, URLs, access labels, and verification metadata. | Developers, automation, and future website features |
 | [🖥️ Interactive Directory](site/index.html) | Searchable website interface, if enabled through GitHub Pages. | Visitors who want to search and filter tools |
 | [📐 JSON Schema](data/tools.schema.json) | Rules defining the structure and required fields for every catalog entry. | Contributors and maintainers |
+| [🔐 Security Policy](SECURITY.md) | Account-safety checklist, repository safety rules, secret-handling guidance, and reporting instructions. | Maintainers and contributors |
 
 ### What is included in the directory?
 
@@ -32,6 +33,20 @@
 - 🧠 Lesser-known tools for local AI, RAG, evaluation, coding agents, DevSecOps, and self-hosting
 
 **Recommended starting point:** Open the [Practical Use-Case Directory](docs/USE_CASE_DIRECTORY.md). Every listed tool includes an official link, a short explanation of its purpose, and a practical situation in which it may be useful.
+
+## 🛡️ Security first
+
+This repository does not need or store API keys, passwords, access tokens, or private credentials. However, no README or policy can guarantee that an account will never be hacked.
+
+For the maintainer:
+
+- Enable GitHub **two-factor authentication (2FA)** or a passkey.
+- Save recovery codes securely and never share them.
+- Use a unique password for GitHub and the connected email account.
+- Review OAuth apps, active sessions, SSH keys, and repository access regularly.
+- Never commit `.env` files, API keys, tokens, passwords, private keys, or personal data.
+- Review external links and community contributions before trusting them.
+- Read the full [Security Policy](SECURITY.md) for incident reporting and secret-rotation steps.
 
 ## Why this directory exists
 
