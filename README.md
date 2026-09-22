@@ -1,64 +1,68 @@
-# Free AI Tools & Developer Resources
+# 🌍 Free Tools for Developers, AI Projects & Startups
 
-> A practical, no-hype directory of free, open-source, local-first, and free-tier tools for students, developers, AI builders, and technical teams.
+> A practical, no-hype directory of free, open-source, local-first, and free-tier tools for students, developers, AI builders, and startups.
 
 [![Maintained](https://img.shields.io/badge/status-maintained-success)](ROADMAP.md)
-[![Catalog](https://img.shields.io/badge/catalog-25%2B%20tools-blue)](data/tools.json)
+[![Catalog](https://img.shields.io/badge/catalog-50%2B%20tools-blue)](data/tools.json)
 [![Data](https://img.shields.io/badge/data-JSON-orange)](data/tools.json)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)](CONTRIBUTING.md)
 
-## Why this directory is different
+## Why this directory exists
 
-Most tool lists only provide names. This project focuses on the questions that matter before you start building:
+This project helps you discover useful tools and understand **why and when to use them**—not just collect random links.
 
-- Is the tool genuinely free, open source, local, or only free-tier?
-- Does it require an API key, paid plan, GPU, or hosting?
-- Can it be self-hosted?
-- What is the practical use case for a student or developer?
-- Where should you verify changing limits and pricing?
-
-The catalog intentionally includes **lesser-known but useful tools** for local AI, RAG, evaluation, coding agents, security, automation, API testing, monitoring, and deployment.
+- Official website and documentation links
+- Practical use cases for developers, AI builders, students, and startups
+- Open-source vs free-tier classification
+- Notes about APIs, hosting, hardware, quotas, and payment conditions
+- Lesser-known tools for local AI, RAG, evaluation, coding agents, security, automation, API testing, monitoring, and deployment
 
 ## Quick start
 
-1. Open the [interactive directory](site/index.html) or browse [`data/tools.json`](data/tools.json).
-2. Search by tool name, category, or use case.
-3. Check the access label and free-limit notes.
-4. Visit the official website and documentation before production use.
+1. Open the [interactive directory](site/index.html), if available.
+2. Browse the [practical use-case directory](docs/USE_CASE_DIRECTORY.md).
+3. Search or filter the structured [JSON catalog](data/tools.json).
+4. Read the official provider documentation before production or commercial use.
 
-## Featured hidden gems
+## Explore by category
 
-| Tool | Useful for | Why it matters |
-|---|---|---|
-| [Jan](https://jan.ai/) | Local AI | Desktop-first local model workspace |
-| [Open WebUI](https://openwebui.com/) | Private AI chat | Interface for local and remote models |
-| [AnythingLLM](https://anythingllm.com/) | RAG | Chat with documents and knowledge bases |
-| [Flowise](https://flowiseai.com/) | AI workflows | Visual LLM and agent application builder |
-| [Langfuse](https://langfuse.com/) | LLM observability | Trace and evaluate AI applications |
-| [Promptfoo](https://www.promptfoo.dev/) | AI testing | Prompt evaluation and red teaming |
-| [Coolify](https://coolify.io/) | Deployment | Self-hosted deployment platform |
-| [Uptime Kuma](https://uptime.kuma.pet/) | Monitoring | Lightweight uptime and status monitoring |
-| [Hoppscotch](https://hoppscotch.io/) | API testing | Fast browser-based API client |
-| [Gitleaks](https://gitleaks.org/) | Security | Detect secrets in code and git history |
-
-## Categories
-
-- **AI:** local LLMs, APIs, RAG, agents, evaluation, observability, coding, speech
-- **Creative:** image generation, image upscaling, design, audio, 3D
-- **Development:** frontend, backend, databases, API clients, testing
-- **DevOps & Security:** hosting, CI, monitoring, secret scanning, container scanning
-- **Data & Automation:** public APIs, workflows, notebooks, data science
-- **Learning:** programming practice, courses, roadmaps, computer science
+- 🤖 AI Tools & APIs
+- 🧩 Backend & Development
+- 🚀 Hosting & Deployment
+- 🗄️ Databases
+- 🔐 Authentication & Security
+- 🎨 UI/UX & Design
+- 🧪 Testing & Code Quality
+- 📚 Learning & Coding Practice
+- ⚙️ Automation & Productivity
 
 ## Access labels
 
-| Label | Meaning |
+- 🟢 **Open Source / Self-hosted:** Software is available to run independently; infrastructure may cost money.
+- 🔵 **Free Tier:** A provider offers free usage with limits.
+- 🟡 **Free for Learning / Conditional:** Access may depend on eligibility, credits, or restrictions.
+- `mixed`: Free and paid options coexist, or cost depends on deployment/provider.
+
+## Featured lesser-known tools
+
+| Tool | Useful for |
 |---|---|
-| `open-source` | The software can be inspected, modified, and usually self-hosted; infrastructure may cost money. |
-| `free` | Core access is available without required payment under stated terms. |
-| `free-tier` | A free plan exists with usage, feature, account, or commercial-use limits. |
-| `credits` | Access depends on credits, promotions, eligibility, or grants. |
-| `mixed` | Free and paid options coexist, or the exact cost depends on the deployment/provider. |
+| Jan | Local AI workspace |
+| Open WebUI | Private AI chat |
+| AnythingLLM | Document chat and RAG |
+| Flowise | Visual AI workflows |
+| Langfuse | LLM observability |
+| Arize Phoenix | AI evaluation |
+| Promptfoo | Prompt testing and red teaming |
+| Aider | Git-aware coding assistance |
+| Tabby | Self-hosted code completion |
+| Coolify | Self-hosted deployment |
+| Uptime Kuma | Monitoring |
+| Gitleaks | Secret detection |
+| Trivy | Security scanning |
+| Hoppscotch | API testing |
+| Penpot | Open-source design |
+| Upscayl | Local image upscaling |
 
 ## Data quality policy
 
@@ -68,17 +72,18 @@ Free plans, quotas, pricing, licenses, and eligibility can change. This director
 2. Do not claim unlimited free access without explicit evidence.
 3. Describe uncertainty instead of inventing exact quotas.
 4. Separate free software from free hosting, API usage, and infrastructure.
-5. Include a verification date for changing services.
+5. Include verification dates for changing services.
 6. Avoid referral links, sponsored placement, and misleading guarantees.
-7. Check the provider's current terms before using a tool commercially or with sensitive data.
+7. Check current terms before using a tool commercially or with sensitive data.
 
 ## Project structure
 
 ```text
 free-ai-tools/
 ├── data/                 # Structured catalog and JSON schema
+├── docs/                 # Practical use-case directory
 ├── site/                 # Static searchable directory
-├── .github/workflows/    # Pages deployment and validation
+├── .github/workflows/    # Deployment and validation
 ├── CONTRIBUTING.md
 ├── PROJECT_OVERVIEW.md
 ├── ROADMAP.md
@@ -88,16 +93,17 @@ free-ai-tools/
 
 ## Documentation
 
+- [Practical use-case directory](docs/USE_CASE_DIRECTORY.md)
 - [Project overview](PROJECT_OVERVIEW.md)
 - [Contribution guide](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
 - [Roadmap](ROADMAP.md)
 - [Data schema](data/tools.schema.json)
-- [Catalog](data/tools.json)
+- [Structured catalog](data/tools.json)
 
-## Contributing
+## Contribution rule
 
-Useful additions are welcome, especially lesser-known tools with an official website, clear documentation, and honest access information. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+When adding a tool, include its official website, category, practical use case, free-access classification, and limitations. Never claim that a service is permanently free or unlimited without current official evidence.
 
 ## Maintainer
 
