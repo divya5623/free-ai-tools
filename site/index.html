@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A curated directory of free and open-source developer and AI tools." />
+  <title>Free Tools Directory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">OPEN • PRACTICAL • COMMUNITY-FRIENDLY</p>
+      <h1>Free Tools Directory<span>.</span></h1>
+      <p class="subtitle">Discover useful AI, developer, learning, and automation tools with transparent access notes.</p>
+      <div class="stats" aria-label="Directory statistics">
+        <strong id="count">Loading…</strong><span>verified entries</span>
+      </div>
+    </header>
+
+    <section class="controls" aria-label="Search and filter tools">
+      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search tools, categories, or notes…" /></label>
+      <select id="access"><option value="">All access types</option><option value="free">Free</option><option value="open-source">Open source</option><option value="free-tier">Free tier</option><option value="mixed">Mixed</option></select>
+      <select id="category"><option value="">All categories</option></select>
+    </section>
+
+    <p id="status" class="status" role="status"></p>
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <footer><a href="https://github.com/divya5623/free-ai-tools">View source on GitHub</a><span>•</span><span>Always verify current limits on official websites.</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
