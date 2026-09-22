@@ -1,116 +1,90 @@
 # Free AI Tools & Developer Resources
 
-> A curated, transparent directory of free, open-source, and free-tier resources for developers, students, AI builders, and technical teams.
+> A practical, no-hype directory of free, open-source, local-first, and free-tier tools for students, developers, AI builders, and technical teams.
 
 [![Maintained](https://img.shields.io/badge/status-maintained-success)](ROADMAP.md)
-[![Documentation](https://img.shields.io/badge/docs-professional-blue)](PROJECT_OVERVIEW.md)
-[![Contributions](https://img.shields.io/badge/contributions-welcome-orange)](CONTRIBUTING.md)
+[![Catalog](https://img.shields.io/badge/catalog-25%2B%20tools-blue)](data/tools.json)
+[![Data](https://img.shields.io/badge/data-JSON-orange)](data/tools.json)
+[![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)](CONTRIBUTING.md)
 
-## Why this project exists
+## Why this directory is different
 
-Finding a useful tool is easy. Understanding **whether it is genuinely free, what the limits are, and when payment is required** is harder.
+Most tool lists only provide names. This project focuses on the questions that matter before you start building:
 
-This repository organizes practical resources with a focus on:
+- Is the tool genuinely free, open source, local, or only free-tier?
+- Does it require an API key, paid plan, GPU, or hosting?
+- Can it be self-hosted?
+- What is the practical use case for a student or developer?
+- Where should you verify changing limits and pricing?
 
-- Official product and documentation links
-- Clear free-access classification
-- Usage limits and billing considerations
-- Practical use cases for learning, prototyping, and projects
-- Community verification and maintenance
+The catalog intentionally includes **lesser-known but useful tools** for local AI, RAG, evaluation, coding agents, security, automation, API testing, monitoring, and deployment.
 
-## Free-access classification
+## Quick start
+
+1. Open the [interactive directory](site/index.html) or browse [`data/tools.json`](data/tools.json).
+2. Search by tool name, category, or use case.
+3. Check the access label and free-limit notes.
+4. Visit the official website and documentation before production use.
+
+## Featured hidden gems
+
+| Tool | Useful for | Why it matters |
+|---|---|---|
+| [Jan](https://jan.ai/) | Local AI | Desktop-first local model workspace |
+| [Open WebUI](https://openwebui.com/) | Private AI chat | Interface for local and remote models |
+| [AnythingLLM](https://anythingllm.com/) | RAG | Chat with documents and knowledge bases |
+| [Flowise](https://flowiseai.com/) | AI workflows | Visual LLM and agent application builder |
+| [Langfuse](https://langfuse.com/) | LLM observability | Trace and evaluate AI applications |
+| [Promptfoo](https://www.promptfoo.dev/) | AI testing | Prompt evaluation and red teaming |
+| [Coolify](https://coolify.io/) | Deployment | Self-hosted deployment platform |
+| [Uptime Kuma](https://uptime.kuma.pet/) | Monitoring | Lightweight uptime and status monitoring |
+| [Hoppscotch](https://hoppscotch.io/) | API testing | Fast browser-based API client |
+| [Gitleaks](https://gitleaks.org/) | Security | Detect secrets in code and git history |
+
+## Categories
+
+- **AI:** local LLMs, APIs, RAG, agents, evaluation, observability, coding, speech
+- **Creative:** image generation, image upscaling, design, audio, 3D
+- **Development:** frontend, backend, databases, API clients, testing
+- **DevOps & Security:** hosting, CI, monitoring, secret scanning, container scanning
+- **Data & Automation:** public APIs, workflows, notebooks, data science
+- **Learning:** programming practice, courses, roadmaps, computer science
+
+## Access labels
 
 | Label | Meaning |
 |---|---|
-| 🟢 Open source / self-hosted | Software can be run independently; infrastructure may cost money. |
-| 🔵 Free tier | A free plan exists with usage, feature, or account limits. |
-| 🟡 Credits / eligibility | Access depends on credits, promotions, students, or other conditions. |
-| 🔴 Paid after allowance | Payment may be required after the free quota is consumed. |
-
-## Directory
-
-| Category | Coverage |
-|---|---|
-| [AI APIs & LLMs](#ai-apis--llms) | Models, inference, local AI, API providers |
-| [AI Coding](#ai-coding) | Coding assistants and developer agents |
-| [Creative AI](#creative-ai) | Image, video, audio, speech, and 3D |
-| [Development](#development) | Frontend, backend, databases, cloud |
-| [Engineering](#engineering) | Security, DevOps, testing, observability |
-| [Data & Automation](#data--automation) | APIs, data science, workflows, agents |
-| [Learning](#learning) | Courses, practice platforms, and roadmaps |
-
-## AI APIs & LLMs
-
-- [Google Gemini API](https://ai.google.dev/) — model-specific request and token quotas.
-- [Groq](https://groq.com/) — fast inference with model/account limits.
-- [Hugging Face](https://huggingface.co/) — open models, datasets, and hosted inference.
-- [Ollama](https://ollama.com/) — run models locally; hardware is the main constraint.
-- [Mistral AI](https://mistral.ai/) — hosted language models and APIs.
-- [OpenRouter](https://openrouter.ai/) — multi-provider model access; free models have individual limits.
-- [Replicate](https://replicate.com/) — hosted model execution; usage-based billing may apply.
-
-## AI Coding
-
-- [Continue](https://github.com/continuedev/continue)
-- [Cline](https://github.com/cline/cline)
-- [Aider](https://aider.chat/)
-- [Tabby](https://github.com/TabbyML/tabby)
-- [GitHub Copilot](https://github.com/features/copilot)
-- [Amazon Q Developer](https://aws.amazon.com/q/developer/)
-- [Cursor](https://cursor.com/)
-
-## Creative AI
-
-- [Stable Diffusion](https://github.com/Stability-AI/stablediffusion)
-- [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
-- [Blender](https://www.blender.org/)
-- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve)
-- [Audacity](https://www.audacityteam.org/)
-- [Whisper](https://github.com/openai/whisper)
-- [Three.js](https://threejs.org/)
-
-## Development
-
-- **Frontend:** [React](https://react.dev/), [Next.js](https://nextjs.org/), [Vue](https://vuejs.org/), [Svelte](https://svelte.dev/), [Tailwind CSS](https://tailwindcss.com/), [Vite](https://vite.dev/)
-- **Backend:** [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [FastAPI](https://fastapi.tiangolo.com/), [Django](https://www.djangoproject.com/), [Spring Boot](https://spring.io/projects/spring-boot)
-- **Databases:** [PostgreSQL](https://www.postgresql.org/), [SQLite](https://sqlite.org/), [MongoDB](https://www.mongodb.com/), [Supabase](https://supabase.com/), [Neon](https://neon.tech/), [Firebase](https://firebase.google.com/)
-- **Cloud:** [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), [Cloudflare Pages](https://pages.cloudflare.com/), [Render](https://render.com/), [AWS](https://aws.amazon.com/free/), [Google Cloud](https://cloud.google.com/free)
-
-## Engineering
-
-- **Security:** [OWASP](https://owasp.org/), [OWASP ZAP](https://www.zaproxy.org/), [Trivy](https://github.com/aquasecurity/trivy), [Gitleaks](https://github.com/gitleaks/gitleaks)
-- **DevOps:** [Docker](https://www.docker.com/), [Kubernetes](https://kubernetes.io/), [GitHub Actions](https://github.com/features/actions), [Jenkins](https://www.jenkins.io/)
-- **Testing:** [Jest](https://jestjs.io/), [Vitest](https://vitest.dev/), [Playwright](https://playwright.dev/), [Cypress](https://www.cypress.io/), [Postman](https://www.postman.com/), [Bruno](https://www.usebruno.com/)
-- **Observability:** [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), [Sentry](https://sentry.io/), [OpenTelemetry](https://opentelemetry.io/)
-
-## Data & Automation
-
-- **Public APIs:** [Public APIs](https://github.com/public-apis/public-apis), [Open-Meteo](https://open-meteo.com/), [NASA APIs](https://api.nasa.gov/), [OpenStreetMap](https://www.openstreetmap.org/)
-- **Automation:** [n8n](https://n8n.io/), [Make](https://www.make.com/), [Zapier](https://zapier.com/), [Activepieces](https://www.activepieces.com/)
-- **AI agents:** [LangChain](https://www.langchain.com/), [LangGraph](https://www.langchain.com/langgraph), [CrewAI](https://www.crewai.com/), [AutoGen](https://github.com/microsoft/autogen), [Dify](https://dify.ai/)
-- **Data science:** [Python](https://www.python.org/), [Jupyter](https://jupyter.org/), [Pandas](https://pandas.pydata.org/), [scikit-learn](https://scikit-learn.org/), [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/)
-
-## Learning
-
-- [freeCodeCamp](https://www.freecodecamp.org/)
-- [Roadmap.sh](https://roadmap.sh/)
-- [LeetCode](https://leetcode.com/)
-- [Codeforces](https://codeforces.com/)
-- [CS50](https://cs50.harvard.edu/)
-- [MIT OpenCourseWare](https://ocw.mit.edu/)
-- [The Odin Project](https://www.theodinproject.com/)
-- [Full Stack Open](https://fullstackopen.com/en/)
+| `open-source` | The software can be inspected, modified, and usually self-hosted; infrastructure may cost money. |
+| `free` | Core access is available without required payment under stated terms. |
+| `free-tier` | A free plan exists with usage, feature, account, or commercial-use limits. |
+| `credits` | Access depends on credits, promotions, eligibility, or grants. |
+| `mixed` | Free and paid options coexist, or the exact cost depends on the deployment/provider. |
 
 ## Data quality policy
 
-Free plans, quotas, pricing, licensing, and eligibility can change. This project therefore follows these rules:
+Free plans, quotas, pricing, licenses, and eligibility can change. This directory follows a conservative policy:
 
-1. Use official links whenever possible.
-2. Never claim “unlimited free” without explicit provider confirmation.
-3. Record exact limits only when verified from current official documentation.
-4. Mark uncertain information as **Needs verification** rather than guessing.
+1. Use official product and documentation links.
+2. Do not claim unlimited free access without explicit evidence.
+3. Describe uncertainty instead of inventing exact quotas.
+4. Separate free software from free hosting, API usage, and infrastructure.
 5. Include a verification date for changing services.
-6. Avoid referral links and misleading claims.
+6. Avoid referral links, sponsored placement, and misleading guarantees.
+7. Check the provider's current terms before using a tool commercially or with sensitive data.
+
+## Project structure
+
+```text
+free-ai-tools/
+├── data/                 # Structured catalog and JSON schema
+├── site/                 # Static searchable directory
+├── .github/workflows/    # Pages deployment and validation
+├── CONTRIBUTING.md
+├── PROJECT_OVERVIEW.md
+├── ROADMAP.md
+├── SECURITY.md
+└── README.md
+```
 
 ## Documentation
 
@@ -118,11 +92,12 @@ Free plans, quotas, pricing, licensing, and eligibility can change. This project
 - [Contribution guide](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
 - [Roadmap](ROADMAP.md)
-- [Tool data schema](data/tools.schema.json)
+- [Data schema](data/tools.schema.json)
+- [Catalog](data/tools.json)
 
 ## Contributing
 
-Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
+Useful additions are welcome, especially lesser-known tools with an official website, clear documentation, and honest access information. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
 ## Maintainer
 
@@ -130,4 +105,4 @@ Maintained by [Divya Shettar](https://github.com/divya5623).
 
 ## Disclaimer
 
-This is a curated community resource, not a guarantee of permanent free access. Always review the provider’s current pricing, usage limits, terms, and license before using a resource in production.
+This is a curated community resource, not a guarantee of permanent free access. Always review current pricing, quotas, terms, privacy policies, and licenses from the official provider.
