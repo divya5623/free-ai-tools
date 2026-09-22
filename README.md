@@ -7,6 +7,32 @@
 [![Data](https://img.shields.io/badge/data-JSON-orange)](data/tools.json)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)](CONTRIBUTING.md)
 
+## 🔎 Where are the tool links?
+
+**All official tool links and practical explanations are available in the following locations:**
+
+| Location | What it contains | Best for |
+|---|---|---|
+| [📚 Practical Use-Case Directory](docs/USE_CASE_DIRECTORY.md) | Tool name, official website, why to use it, and when to use it. Organized by category. | People who want to understand and choose tools |
+| [🗂️ Structured JSON Catalog](data/tools.json) | Machine-readable tool records, categories, URLs, access labels, and verification metadata. | Developers, automation, and future website features |
+| [🖥️ Interactive Directory](site/index.html) | Searchable website interface, if enabled through GitHub Pages. | Visitors who want to search and filter tools |
+| [📐 JSON Schema](data/tools.schema.json) | Rules defining the structure and required fields for every catalog entry. | Contributors and maintainers |
+
+### What is included in the directory?
+
+- 🤖 AI tools and APIs
+- 🧩 Backend and development tools
+- 🚀 Hosting and deployment platforms
+- 🗄️ Databases
+- 🔐 Authentication and security
+- 🎨 UI/UX and design resources
+- 🧪 Testing and code-quality tools
+- 📚 Learning and coding-practice platforms
+- ⚙️ Automation, productivity, and monitoring tools
+- 🧠 Lesser-known tools for local AI, RAG, evaluation, coding agents, DevSecOps, and self-hosting
+
+**Recommended starting point:** Open the [Practical Use-Case Directory](docs/USE_CASE_DIRECTORY.md). Every listed tool includes an official link, a short explanation of its purpose, and a practical situation in which it may be useful.
+
 ## Why this directory exists
 
 This project helps you discover useful tools and understand **why and when to use them**—not just collect random links.
@@ -19,10 +45,10 @@ This project helps you discover useful tools and understand **why and when to us
 
 ## Quick start
 
-1. Open the [interactive directory](site/index.html), if available.
-2. Browse the [practical use-case directory](docs/USE_CASE_DIRECTORY.md).
-3. Search or filter the structured [JSON catalog](data/tools.json).
-4. Read the official provider documentation before production or commercial use.
+1. Open the [Practical Use-Case Directory](docs/USE_CASE_DIRECTORY.md) for human-readable explanations.
+2. Open the [JSON catalog](data/tools.json) for structured tool data.
+3. Use the [interactive directory](site/index.html), if available.
+4. Visit the official provider website and documentation before production or commercial use.
 
 ## Explore by category
 
