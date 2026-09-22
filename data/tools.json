@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Ollama",
+    "category": "AI / Local LLM",
+    "url": "https://ollama.com/",
+    "access": "open-source",
+    "free_limit": "Local execution; limited by device hardware",
+    "paid_after": "No hosted quota in the local runtime",
+    "self_hostable": true,
+    "last_verified": "2026-09-23",
+    "notes": "Confirm model licenses and hardware requirements before production use."
+  },
+  {
+    "name": "Hugging Face",
+    "category": "AI / Models",
+    "url": "https://huggingface.co/",
+    "access": "mixed",
+    "free_limit": "Free access varies by model, endpoint, and account",
+    "paid_after": "Hosted compute and premium features may require payment",
+    "self_hostable": true,
+    "last_verified": "2026-09-23",
+    "notes": "Check the specific model or service page for current terms."
+  },
+  {
+    "name": "GitHub Actions",
+    "category": "DevOps / CI",
+    "url": "https://github.com/features/actions",
+    "access": "free-tier",
+    "free_limit": "Quota depends on account type, runner, and usage",
+    "paid_after": "Additional usage may be billed",
+    "self_hostable": false,
+    "last_verified": "2026-09-23",
+    "notes": "Review current GitHub Actions billing documentation."
+  }
+]
